@@ -1,26 +1,126 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFFFFF;
+  --foreground: #1D110A;
+  
+  --color-cream-light: #FFFFFF;
+  --color-cream-medium: #EEDFD2;
+  --color-cream-dark: #DEC0A8;
+  --color-primary-brown: #1D110A;
+  --color-primary-brown-light: #3D2314;
+  --color-accent-caramel: #BF7B47;
+  --color-accent-gold: #C6905D;
+  --color-accent-terracotta: #914B1F;
+  --color-sage: #6B7B69;
+  --color-sage-light: #E1E5DF;
+  
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-serif: var(--font-serif), Georgia, serif;
+  
+  --color-cream-light: var(--color-cream-light);
+  --color-cream-medium: var(--color-cream-medium);
+  --color-cream-dark: var(--color-cream-dark);
+  --color-primary-brown: var(--color-primary-brown);
+  --color-primary-brown-light: var(--color-primary-brown-light);
+  --color-accent-caramel: var(--color-accent-caramel);
+  --color-accent-gold: var(--color-accent-gold);
+  --color-accent-terracotta: var(--color-accent-terracotta);
+  --color-sage: var(--color-sage);
+  --color-sage-light: var(--color-sage-light);
+  
+  --animate-marquee: marquee 25s linear infinite;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-cream-light);
+  color: var(--color-primary-brown);
+  font-family: var(--font-sans), sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(145, 75, 31, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(29, 17, 10, 0.7);
+}
+
+/* Floating animation */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+}
+
+@keyframes float-medium {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-3deg);
+  }
+}
+
+@keyframes float-fast {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 6s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-fast 4s ease-in-out infinite;
+}
+
+/* Global scrollbar rules apply to all containers */
+
+@keyframes popup-anim {
+  0% {
+    opacity: 0;
+    transform: scale(0.96) translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-popup {
+  animation: popup-anim 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
