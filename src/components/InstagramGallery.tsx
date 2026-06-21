@@ -27,37 +27,37 @@ export default function InstagramGallery() {
   const galleryItems = [
     {
       id: 0,
-      image: "/images/insta_cinnamon.png",
+      image: "/images/insta_cinnamon.webp",
       aspect: "aspect-[4/5]",
       caption: "Morning therapy: dusting warm Cinnamon Rolls with sweet powdered sugar glaze. ✨ #cinnamonrolls #sweetcrumbs",
     },
     {
       id: 1,
-      image: "/images/insta_cookies.png",
+      image: "/images/insta_cookies.webp",
       aspect: "aspect-square",
       caption: "Melted chocolate puddles and gooey centers. Our Sea Salt Chocolate Chip Cookies are freshly baked all day. 🍪 #cookies #chocolatechip",
     },
     {
       id: 2,
-      image: "/images/croissants.png",
+      image: "/images/croissants.webp",
       aspect: "aspect-[3/4]",
       caption: "Laminated layers of pure European butter. Flaky, crispy, and warm out of the oven. Best paired with coffee! ☕️🥐 #croissant #frenchpastry",
     },
     {
       id: 3,
-      image: "/images/fruit_tart.png",
+      image: "/images/fruit_tart.webp",
       aspect: "aspect-square",
       caption: "Our glazed peach & apricot tart sits on a vanilla bean custard base. Summer vibes in every bite. 🍑☀️ #fruittart #artisanpastry",
     },
     {
       id: 4,
-      image: "/images/chocolate_cake.png",
+      image: "/images/chocolate_cake.webp",
       aspect: "aspect-[4/3]",
       caption: "Decadence in every layer. Our Signature Chocolate Truffle cake is ready to elevate your celebrations. 🍫🎂 #chocolatecake #gourmet",
     },
     {
       id: 5,
-      image: "/images/birthday_cake.png",
+      image: "/images/birthday_cake.webp",
       aspect: "aspect-[3/4]",
       caption: "Caramel drip crowns, toasted hazelnuts, and chocolate macarons. A custom cake built to impress. 🍮🎂 #customcake #birthdaycake",
     },

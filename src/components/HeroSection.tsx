@@ -81,7 +81,7 @@ export default function HeroSection({
               {/* Main Image (Hero Sourdough & Ingredients) */}
               <div className="absolute top-3 left-3 w-[85%] aspect-square rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white z-10 transition-transform duration-500 hover:scale-[1.02]">
                 <Image
-                  src="/images/hero_bakery.png"
+                  src="/images/hero_bakery.webp"
                   alt="Premium artisan baking ingredients and fresh sourdough bread"
                   fill
                   sizes="(max-w-768px) 100vw, 550px"
@@ -93,7 +93,7 @@ export default function HeroSection({
               {/* Overlapping Floating Pastry Card */}
               <div className="absolute -bottom-6 -right-2 w-[55%] aspect-square rounded-3xl overflow-hidden shadow-xl border-4 border-white z-20 transition-transform duration-500 hover:scale-[1.05] animate-float-slow">
                 <Image
-                  src="/images/croissants.png"
+                  src="/images/croissants.webp"
                   alt="Flaky golden croissants stacked"
                   fill
                   sizes="(max-w-768px) 50vw, 280px"

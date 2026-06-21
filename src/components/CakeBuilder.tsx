@@ -116,7 +116,7 @@ export default function CakeBuilder({
       name: `Custom ${occasion} Cake (${selectedSize.label.split(" (")[0]})`,
       price: totalPrice,
       quantity: 1,
-      image: fileUrl || "/images/custom_cake.png",
+      image: fileUrl || "/images/custom_cake.webp",
       type: "custom_cake",
       description: `Flavor: ${selectedFlavor.label} | Frosting: ${selectedFrosting.label} | Message: "${cakeMessage || "None"}"`,
       details: {
@@ -370,7 +370,7 @@ export default function CakeBuilder({
             {/* Header Render Image (Static) */}
             <div className="relative aspect-[16/7] w-full bg-[#F5EBE0] shrink-0">
               <Image
-                src="/images/custom_cake.png"
+                src="/images/custom_cake.webp"
                 alt="Custom cake preview illustration"
                 fill
                 sizes="(max-w-768px) 100vw, 420px"
