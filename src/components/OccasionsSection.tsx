@@ -47,13 +47,13 @@ export default function OccasionsSection({
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="font-sans text-xs font-bold uppercase tracking-widest text-[#C88A58]">
+          <span className="caramel-label font-sans text-xs font-bold uppercase tracking-widest">
             Celebrations & Events
           </span>
           <h2 className="font-serif text-4xl sm:text-5xl font-bold text-[#2A1A10] mt-3">
             Baking for Special Moments
           </h2>
-          <div className="h-[3px] bg-[#C88A58] w-12 mx-auto mt-4" />
+          <div className="h-[3px] caramel-bar w-12 mx-auto mt-4" />
           <p className="font-sans text-sm text-[#2A1A10]/70 mt-4">
             Whether you are walking down the aisle, hosting a team lunch, or celebrating a major milestone, Sweet Crumbs adds the perfect touch of sweetness.
           </p>
@@ -99,7 +99,7 @@ export default function OccasionsSection({
                   <div className="mt-8 pt-4 border-t border-[#EBDCD0]/40">
                     <button
                       onClick={() => onOccasionSelect(item.badge)}
-                      className="w-full bg-[#FCFAF7] border-2 border-[#C88A58] text-[#C88A58] hover:bg-[#C88A58] hover:text-[#FCFAF7] py-3 rounded-xl font-sans text-xs font-bold tracking-wide transition-all duration-300 flex items-center justify-center space-x-1 cursor-pointer shadow-sm"
+                      className="w-full caramel-btn-outline py-3 rounded-xl font-sans text-xs font-bold tracking-wide flex items-center justify-center space-x-1 cursor-pointer shadow-sm"
                     >
                       <Icon className="h-3.5 w-3.5" />
                       <span>Configure {item.badge}</span>

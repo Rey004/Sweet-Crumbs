@@ -45,7 +45,7 @@ export default function HeroSection({
             {/* Main Headline */}
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-[#1D110A] leading-[1.15]">
               Baking Endless <br />
-              <span className="text-[#BF7B47] relative">
+              <span className="caramel-text relative">
                 Happiness
               </span> <br />
               For Every Heart
@@ -60,14 +60,14 @@ export default function HeroSection({
             <div className="flex flex-row space-x-2.5 sm:space-x-3 pt-1.5 w-full justify-center lg:justify-start">
               <button
                 onClick={onOrderNowClick}
-                className="group bg-[#BF7B47] hover:bg-[#914B1F] text-white px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs font-bold tracking-wide transition-all duration-300 shadow-md hover:shadow-xl flex items-center justify-center space-x-1.5 cursor-pointer"
+                className="group caramel-btn px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs font-bold tracking-wide shadow-md flex items-center justify-center space-x-1.5 cursor-pointer"
               >
                 <span>Order Online Now</span>
                 <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
               </button>
               <button
                 onClick={onCustomCakeClick}
-                className="bg-white border-2 border-[#BF7B47] hover:bg-[#EEDFD2]/40 text-[#BF7B47] px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs font-bold tracking-wide transition-all duration-300 shadow-sm hover:shadow flex items-center justify-center space-x-1.5 cursor-pointer"
+                className="caramel-btn-outline bg-white px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs font-bold tracking-wide shadow-sm hover:shadow flex items-center justify-center space-x-1.5 cursor-pointer"
               >
                 <span>Custom Cake Request</span>
               </button>
@@ -106,14 +106,14 @@ export default function HeroSection({
                 <p className="font-serif text-xs font-bold text-center leading-tight">
                   Guaranteed Fresh Out the Oven!
                 </p>
-                <div className="h-[2px] bg-[#BF7B47] w-6 mx-auto mt-1.5" />
+                <div className="h-[2px] caramel-bar w-6 mx-auto mt-1.5" />
                 <p className="font-sans text-[9px] text-center text-[#F5EBE0]/80 mt-1 uppercase tracking-widest font-bold">
                   Sweet Crumbs
                 </p>
               </div>
 
               {/* Decorative circle badges */}
-              <div className="absolute top-1/2 -right-3 h-16 w-16 rounded-full bg-[#BF7B47] border-4 border-white flex items-center justify-center text-white font-serif font-bold text-[10px] uppercase tracking-wider text-center shadow-lg z-20 rotate-12">
+              <div className="absolute top-1/2 -right-3 h-16 w-16 rounded-full caramel-icon-circle border-4 border-white flex items-center justify-center font-serif font-bold text-[10px] uppercase tracking-wider text-center shadow-lg z-20 rotate-12">
                 <span>100% Fresh</span>
               </div>
             </div>

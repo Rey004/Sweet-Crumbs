@@ -12,7 +12,7 @@ export default function TestimonialsSection() {
       rating: 5,
       date: "2 weeks ago",
       initial: "E",
-      color: "bg-[#C88A58]",
+      color: "caramel-icon-circle",
     },
     {
       name: "David M.",
@@ -48,13 +48,13 @@ export default function TestimonialsSection() {
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="font-sans text-xs font-bold uppercase tracking-widest text-[#C88A58]">
+          <span className="caramel-label font-sans text-xs font-bold uppercase tracking-widest">
             Customer Stories
           </span>
           <h2 className="font-serif text-4xl sm:text-5xl font-bold text-[#2A1A10] mt-3">
             Loved by Our Community
           </h2>
-          <div className="h-[3px] bg-[#C88A58] w-12 mx-auto mt-4" />
+          <div className="h-[3px] caramel-bar w-12 mx-auto mt-4" />
           <p className="font-sans text-sm text-[#2A1A10]/70 mt-4">
             Hear from our neighbors and regular guests about their experiences with our fresh bakes and custom celebration cakes.
           </p>
@@ -86,21 +86,21 @@ export default function TestimonialsSection() {
               <div className="flex items-center space-x-2">
                 <span className="w-12 text-gray-600 font-bold">5 Stars</span>
                 <div className="flex-grow bg-[#EBDCD0]/40 h-2 rounded-full overflow-hidden">
-                  <div className="bg-[#C88A58] h-full rounded-full" style={{ width: "94%" }} />
+                  <div className="caramel-bar h-full rounded-full" style={{ width: "94%" }} />
                 </div>
                 <span className="w-8 text-right text-gray-500 font-bold">94%</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span className="w-12 text-gray-600 font-bold">4 Stars</span>
                 <div className="flex-grow bg-[#EBDCD0]/40 h-2 rounded-full overflow-hidden">
-                  <div className="bg-[#C88A58] h-full rounded-full" style={{ width: "5%" }} />
+                  <div className="caramel-bar h-full rounded-full" style={{ width: "5%" }} />
                 </div>
                 <span className="w-8 text-right text-gray-500 font-bold">5%</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span className="w-12 text-gray-600 font-bold">3 Stars</span>
                 <div className="flex-grow bg-[#EBDCD0]/40 h-2 rounded-full overflow-hidden">
-                  <div className="bg-[#C88A58] h-full rounded-full" style={{ width: "1%" }} />
+                  <div className="caramel-bar h-full rounded-full" style={{ width: "1%" }} />
                 </div>
                 <span className="w-8 text-right text-gray-500 font-bold">1%</span>
               </div>

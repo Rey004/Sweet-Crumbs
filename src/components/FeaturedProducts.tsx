@@ -35,13 +35,13 @@ export default function FeaturedProducts({
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="font-sans text-xs font-bold uppercase tracking-widest text-[#C88A58]">
+          <span className="caramel-label font-sans text-xs font-bold uppercase tracking-widest">
             Crafted with Passion
           </span>
           <h2 className="font-serif text-4xl sm:text-5xl font-bold text-[#2A1A10] mt-3">
             Explore Our Featured Bakes
           </h2>
-          <div className="h-[3px] bg-[#C88A58] w-12 mx-auto mt-4" />
+          <div className="h-[3px] caramel-bar w-12 mx-auto mt-4" />
           <p className="font-sans text-sm text-[#2A1A10]/70 mt-4">
             From the crisp layer of a morning croissant to the rich melt of our signature truffle cake, discover our daily selection of handmade bakes.
           </p>
@@ -55,8 +55,8 @@ export default function FeaturedProducts({
               onClick={() => setSelectedCategory(cat.value)}
               className={`px-5 py-2.5 rounded-full font-sans text-xs sm:text-sm font-bold tracking-wide transition-all duration-300 shadow-sm cursor-pointer ${
                 selectedCategory === cat.value
-                  ? "bg-[#C88A58] text-[#FCFAF7] shadow-md scale-105"
-                  : "bg-[#FCFAF7] border border-[#EBDCD0] text-[#2A1A10] hover:bg-[#F5EBE0] hover:text-[#C88A58]"
+                  ? "caramel-btn shadow-md scale-105"
+                  : "bg-[#FCFAF7] border border-[#EBDCD0] text-[#2A1A10] hover:bg-[#F5EBE0] hover:caramel-text"
               }`}
             >
               {cat.label}
@@ -91,7 +91,7 @@ export default function FeaturedProducts({
                     <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#2A1A10] group-hover:text-[#C88A58] transition-colors duration-300">
                       {product.name}
                     </h3>
-                    <span className="font-serif text-lg sm:text-xl font-bold text-[#C88A58] ml-2">
+                    <span className="caramel-text font-serif text-lg sm:text-xl font-bold ml-2">
                       ${product.price.toFixed(2)}
                     </span>
                   </div>
@@ -102,7 +102,7 @@ export default function FeaturedProducts({
 
                   {/* Add to Cart Actions */}
                   <div className="mt-6 pt-4 border-t border-[#EBDCD0]/40 flex items-center justify-between">
-                    <span className="font-sans text-[11px] font-bold text-[#C88A58] uppercase tracking-wider bg-[#F5EBE0] px-3 py-1 rounded-full border border-[#EBDCD0]/40">
+                    <span className="caramel-label font-sans text-[11px] font-bold uppercase tracking-wider bg-[#F5EBE0] px-3 py-1 rounded-full border border-[#EBDCD0]/40">
                       {product.category}
                     </span>
 
@@ -111,7 +111,7 @@ export default function FeaturedProducts({
                       className={`px-4 py-2.5 rounded-xl font-sans text-xs font-bold tracking-wide transition-all duration-300 flex items-center space-x-1.5 cursor-pointer shadow-sm ${
                         quantityInCart > 0
                           ? "bg-[#7F8C7D] text-[#FCFAF7] hover:bg-[#687466]"
-                          : "bg-[#C88A58] text-[#FCFAF7] hover:bg-[#A05A2C] hover:shadow"
+                          : "caramel-btn hover:shadow cursor-pointer shadow-sm"
                       }`}
                     >
                       {quantityInCart > 0 ? (

@@ -124,3 +124,59 @@ body {
 .animate-popup {
   animation: popup-anim 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* ─── Caramel Gradient Utilities ─────────────────────────────────────────── */
+
+/* Solid-fill buttons (bg gradient top-to-bottom, light → slightly dark) */
+.caramel-btn {
+  background: linear-gradient(to bottom, #C6905D, #A05A2C);
+  color: #FCFAF7;
+  transition: filter 0.2s ease, box-shadow 0.2s ease;
+}
+.caramel-btn:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 4px 16px rgba(191, 123, 71, 0.35);
+}
+
+/* Outline buttons that fill on hover */
+.caramel-btn-outline {
+  background: transparent;
+  border: 2px solid #C88A58;
+  color: #C88A58;
+  transition: all 0.3s ease;
+}
+.caramel-btn-outline:hover {
+  background: linear-gradient(to bottom, #C6905D, #A05A2C);
+  border-color: transparent;
+  color: #FCFAF7;
+}
+
+/* Gradient text (top-to-bottom, lighter → slightly darker caramel) */
+.caramel-text {
+  background: linear-gradient(to bottom, #C6905D, #A05A2C);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Round icon circle with gradient bg */
+.caramel-icon-circle {
+  background: linear-gradient(to bottom, #C6905D, #A05A2C);
+  color: #FCFAF7;
+}
+
+/* Thin bar / divider fill (e.g. rating bars, section underline) */
+.caramel-bar {
+  background: linear-gradient(to right, #C6905D, #A05A2C);
+}
+
+/* Section accent label (uppercase tagline text) */
+.caramel-label {
+  background: linear-gradient(to bottom, #C6905D, #A05A2C);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+

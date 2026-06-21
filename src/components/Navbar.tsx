@@ -150,7 +150,7 @@ export default function Navbar({ cartCount, onCartClick, onNavigate }: NavbarPro
                 <circle cx="37" cy="14" r="0.8" fill="#BF7B47"/>
                 <circle cx="30" cy="5" r="0.8" fill="#BF7B47"/>
               </svg>
-              <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-[#1D110A] group-hover:text-[#BF7B47] transition-colors duration-300">
+              <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight bg-gradient-to-r from-[#1D110A] to-[#1D110A] group-hover:from-[#BF7B47] group-hover:to-[#914B1F] bg-clip-text text-transparent transition-all duration-300">
                 Sweet Crumbs
               </span>
             </div>
@@ -159,7 +159,7 @@ export default function Navbar({ cartCount, onCartClick, onNavigate }: NavbarPro
             <nav className="hidden md:flex relative bg-[#EEDFD2]/40 border border-[#DEC0A8]/30 rounded-full p-1 items-center shadow-sm">
               {/* Sliding Highlight Pill */}
               <div
-                className="absolute top-1 bottom-1 rounded-full bg-[#BF7B47] transition-all duration-300 ease-out shadow-sm"
+                className="absolute top-1 bottom-1 rounded-full caramel-btn transition-all duration-300 ease-out shadow-sm"
                 style={{
                   width: "112px",
                   opacity: activeSection === "hero" ? 0 : 1,
@@ -219,7 +219,7 @@ export default function Navbar({ cartCount, onCartClick, onNavigate }: NavbarPro
               >
                 <ShoppingBag className="h-5 w-5 transition-transform duration-300 group-hover:scale-105" />
                 {cartCount > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-[#C88A58] text-[#FCFAF7] text-[10px] font-bold h-5 w-5 rounded-full flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 bg-gradient-to-br from-[#C6905D] to-[#914B1F] text-[#FCFAF7] text-[10px] font-bold h-5 w-5 rounded-full flex items-center justify-center shadow-sm">
                     {cartCount}
                   </span>
                 )}
@@ -228,7 +228,7 @@ export default function Navbar({ cartCount, onCartClick, onNavigate }: NavbarPro
               {/* Mobile Menu Button (Creative Cookie Hamburger - Dots Removed) */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="relative h-11 w-11 flex items-center justify-center rounded-full border-2 border-[#1D110A] bg-[#DEC0A8] text-[#1D110A] hover:bg-[#EEDFD2] md:hidden transition-all duration-300 focus:outline-none cursor-pointer shadow-md hover:scale-105 active:scale-95 group overflow-hidden"
+                className="relative h-11 w-11 flex items-center justify-center rounded-full border-2 border-[#1D110A] bg-gradient-to-br from-[#DEC0A8] to-[#C6905D]/60 text-[#1D110A] hover:from-[#EEDFD2] hover:to-[#DEC0A8] md:hidden transition-all duration-300 focus:outline-none cursor-pointer shadow-md hover:scale-105 active:scale-95 group overflow-hidden"
                 aria-label="Toggle Menu"
               >
                 {/* Animated Hamburger Lines */}
@@ -257,7 +257,7 @@ export default function Navbar({ cartCount, onCartClick, onNavigate }: NavbarPro
 
       {/* Mobile Navigation Drawer (Animate with slide transition) */}
       <div
-        className={`fixed inset-0 z-50 bg-[#EEDFD2] md:hidden flex flex-col w-screen h-screen transition-all duration-500 ease-in-out overflow-hidden ${
+        className={`fixed inset-0 z-50 bg-[#EEDFD2] md:hidden flex flex-col w-full h-dvh transition-all duration-500 ease-in-out overflow-hidden ${
           isMobileMenuOpen ? "translate-x-0 pointer-events-auto" : "translate-x-full pointer-events-none"
         }`}
       >
@@ -276,9 +276,9 @@ export default function Navbar({ cartCount, onCartClick, onNavigate }: NavbarPro
           <circle cx="30" cy="5" r="0.8" fill="currentColor"/>
         </svg>
 
-        <div className="w-full h-full flex flex-col justify-between p-6 overflow-y-auto z-10 relative">
+        <div className="w-full h-full flex flex-col justify-between p-5 sm:p-6 overflow-y-auto z-10 relative">
           {/* Drawer Header */}
-          <div className="flex justify-between items-center pb-4 border-b border-[#1D110A]/10">
+          <div className="flex justify-between items-center pb-4 border-b border-[#1D110A]/10 shrink-0">
             <div className="flex items-center space-x-3">
               <svg className="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 5 A 15 15 0 1 0 35 20 A 6 6 0 0 1 29 11 A 6 6 0 0 1 20 5 Z" stroke="#1D110A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -289,7 +289,7 @@ export default function Navbar({ cartCount, onCartClick, onNavigate }: NavbarPro
                 <circle cx="37" cy="14" r="0.8" fill="#BF7B47"/>
                 <circle cx="30" cy="5" r="0.8" fill="#BF7B47"/>
               </svg>
-              <span className="font-serif text-xl font-bold tracking-tight text-[#1D110A]">
+              <span className="font-serif text-xl font-bold tracking-tight bg-gradient-to-r from-[#1D110A] to-[#BF7B47] bg-clip-text text-transparent">
                 Sweet Crumbs
               </span>
             </div>
@@ -303,12 +303,12 @@ export default function Navbar({ cartCount, onCartClick, onNavigate }: NavbarPro
           </div>
 
           {/* Vertical Navigation Links */}
-          <nav className="flex flex-col pt-8 flex-grow">
+          <nav className="flex flex-col pt-4 pb-4 flex-grow justify-center min-h-0 overflow-y-auto">
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => handleLinkClick(link.id)}
-                className="w-full text-left font-serif text-2xl font-bold text-[#1D110A] hover:text-[#BF7B47] transition-all duration-300 py-4 border-b border-[#1D110A]/10 last:border-b-0 cursor-pointer"
+                className="w-full text-left font-serif text-xl sm:text-2xl font-bold bg-gradient-to-r from-[#1D110A] to-[#1D110A] hover:from-[#BF7B47] hover:to-[#914B1F] bg-clip-text text-transparent transition-all duration-300 py-3 sm:py-4 border-b border-[#1D110A]/10 last:border-b-0 cursor-pointer"
               >
                 {link.label}
               </button>
@@ -316,7 +316,7 @@ export default function Navbar({ cartCount, onCartClick, onNavigate }: NavbarPro
           </nav>
 
           {/* Drawer Footer Actions & Social Icons */}
-          <div className="space-y-6 pt-6 border-t border-[#1D110A]/10">
+          <div className="space-y-4 sm:space-y-6 pt-4 border-t border-[#1D110A]/10 shrink-0">
             {/* Social Icons (Mobile Drawer) */}
             <div className="flex items-center space-x-3.5 justify-center sm:justify-start">
               <span className="font-sans text-xs font-bold uppercase tracking-wider text-[#1D110A]/40">
@@ -347,9 +347,9 @@ export default function Navbar({ cartCount, onCartClick, onNavigate }: NavbarPro
                 setIsMobileMenuOpen(false);
                 onCartClick();
               }}
-              className="w-full bg-[#BF7B47] hover:bg-[#914B1F] text-white py-4 rounded-xl font-sans text-sm font-bold tracking-wide transition-all duration-300 shadow flex items-center justify-center space-x-2 cursor-pointer"
+              className="w-full bg-gradient-to-r from-[#BF7B47] via-[#C6905D] to-[#914B1F] hover:from-[#914B1F] hover:via-[#BF7B47] hover:to-[#C6905D] text-white py-3.5 sm:py-4 rounded-xl font-sans text-sm font-bold tracking-wide transition-all duration-500 shadow-md hover:shadow-lg flex items-center justify-center space-x-2 cursor-pointer"
             >
-              <ShoppingBag className="h-5 w-5" />
+              <ShoppingBag className="h-5 w-5 drop-shadow-sm" />
               <span>View Shopping Cart ({cartCount})</span>
             </button>
           </div>

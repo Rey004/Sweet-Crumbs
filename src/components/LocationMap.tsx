@@ -19,7 +19,7 @@ export default function LocationMap() {
       name: "Zone 2: City Center (5 - 12 km)",
       details: "Free delivery for orders above $50. $8 flat fee otherwise.",
       color: "border-[#C88A58] bg-[#C88A58]/5",
-      badgeColor: "bg-[#C88A58] text-[#FCFAF7]",
+      badgeColor: "caramel-icon-circle",
     },
     {
       id: 3,
@@ -35,13 +35,13 @@ export default function LocationMap() {
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="font-sans text-xs font-bold uppercase tracking-widest text-[#C88A58]">
+          <span className="caramel-label font-sans text-xs font-bold uppercase tracking-widest">
             Find Us & Delivery Details
           </span>
           <h2 className="font-serif text-4xl sm:text-5xl font-bold text-[#2A1A10] mt-3">
             Visit Our Bakery Shop
           </h2>
-          <div className="h-[3px] bg-[#C88A58] w-12 mx-auto mt-4" />
+          <div className="h-[3px] caramel-bar w-12 mx-auto mt-4" />
           <p className="font-sans text-sm text-[#2A1A10]/70 mt-4">
             Located in the heart of the Artisan District. Stop by for hot cinnamon rolls, or configure delivery straight to your doorstep.
           </p>
@@ -54,7 +54,7 @@ export default function LocationMap() {
             <div className="bg-[#F5EBE0]/30 border border-[#EBDCD0] rounded-3xl p-6 sm:p-8 space-y-6">
               {/* Address */}
               <div className="flex items-start space-x-4">
-                <div className="h-10 w-10 rounded-full bg-[#C88A58] flex items-center justify-center text-[#FCFAF7] shrink-0">
+                <div className="h-10 w-10 rounded-full caramel-icon-circle flex items-center justify-center shrink-0">
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div>
@@ -173,7 +173,7 @@ export default function LocationMap() {
                 href="https://maps.google.com/?q=SoHo,+New+York,+NY+10012"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#2A1A10] text-[#FCFAF7] hover:bg-[#C88A58] py-3.5 rounded-xl font-bold tracking-wide transition-all duration-300 text-center shadow"
+                className="bg-[#2A1A10] text-[#FCFAF7] hover:brightness-125 py-3.5 rounded-xl font-bold tracking-wide transition-all duration-300 text-center shadow"
               >
                 Open Google Maps Directions
               </a>

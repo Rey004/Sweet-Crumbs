@@ -123,7 +123,7 @@ export default function Footer() {
                 <span>Saturday - Sunday:</span>
                 <span className="font-semibold">8 AM - 4 PM</span>
               </p>
-              <p className="text-[11px] text-[#C88A58] font-bold">
+              <p className="text-[11px] caramel-text font-bold">
                 * Oven fresh batches ready daily at 7:30 AM!
               </p>
             </div>
@@ -184,7 +184,7 @@ export default function Footer() {
                 />
                 <button
                   type="submit"
-                  className="absolute right-2 top-1.5 bg-[#C88A58] hover:bg-[#A05A2C] text-[#FCFAF7] p-1.5 rounded-lg transition-all"
+                  className="absolute right-2 top-1.5 caramel-btn p-1.5 rounded-lg"
                   aria-label="Subscribe Submit"
                 >
                   <Mail className="h-4 w-4" />

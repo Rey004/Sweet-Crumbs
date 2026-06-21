@@ -92,15 +92,15 @@ export default function InstagramGallery() {
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="font-sans text-xs font-bold uppercase tracking-widest text-[#C88A58]">
+          <span className="caramel-label font-sans text-xs font-bold uppercase tracking-widest">
             Visual Sweetness
           </span>
           <h2 className="font-serif text-4xl sm:text-5xl font-bold text-[#2A1A10] mt-3">
             Baked with Love on Instagram
           </h2>
-          <div className="h-[3px] bg-[#C88A58] w-12 mx-auto mt-4" />
+          <div className="h-[3px] caramel-bar w-12 mx-auto mt-4" />
           <p className="font-sans text-sm text-[#2A1A10]/70 mt-4">
-            Follow our daily kitchen adventures and see our fresh bakes. Use tag <strong className="text-[#C88A58]">#SweetCrumbs</strong> to get featured!
+            Follow our daily kitchen adventures and see our fresh bakes. Use tag <strong className="caramel-text">#SweetCrumbs</strong> to get featured!
           </p>
         </div>
 
@@ -216,7 +216,7 @@ export default function InstagramGallery() {
             <div className="p-6 md:p-8 md:w-2/5 flex flex-col justify-between bg-[#FCFAF7]">
               <div>
                 <div className="flex items-center space-x-3 pb-4 border-b border-[#EBDCD0]">
-                  <div className="h-8 w-8 rounded-full bg-[#C88A58] flex items-center justify-center text-[#FCFAF7] font-serif text-sm font-bold">
+                  <div className="h-8 w-8 rounded-full caramel-icon-circle flex items-center justify-center font-serif text-sm font-bold">
                     S
                   </div>
                   <div>

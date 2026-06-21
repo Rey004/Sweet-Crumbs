@@ -21,7 +21,7 @@ export default function FreshSpecials({
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div className="max-w-xl text-left">
-            <span className="font-sans text-xs font-bold uppercase tracking-widest text-[#C88A58] flex items-center space-x-1">
+            <span className="caramel-label font-sans text-xs font-bold uppercase tracking-widest flex items-center space-x-1">
               <Flame className="h-4 w-4 fill-current text-[#C88A58]" />
               <span>Today's Fresh Batch</span>
             </span>
@@ -93,8 +93,8 @@ export default function FreshSpecials({
                       <div className="w-full bg-[#EBDCD0] h-2.5 rounded-full overflow-hidden">
                         <div
                           className={`h-full rounded-full transition-all duration-500 ${
-                            available <= 3 ? "bg-[#A05A2C]" : "bg-[#C88A58]"
-                          }`}
+                              available <= 3 ? "bg-[#A05A2C]" : "caramel-bar"
+                            }`}
                           style={{ width: `${percentage}%` }}
                         />
                       </div>
@@ -114,7 +114,7 @@ export default function FreshSpecials({
                             ? "bg-[#EBDCD0] text-[#2A1A10]/40 cursor-not-allowed shadow-none"
                             : quantityInCart > 0
                             ? "bg-[#7F8C7D] text-[#FCFAF7] hover:bg-[#687466]"
-                            : "bg-[#C88A58] text-[#FCFAF7] hover:bg-[#A05A2C] hover:shadow"
+                            : "caramel-btn hover:shadow cursor-pointer shadow-sm"
                         }`}
                       >
                         <ShoppingCart className="h-4 w-4" />
@@ -199,7 +199,7 @@ export default function FreshSpecials({
 
                       {/* Actions */}
                       <div className="flex items-center justify-between pt-3 border-t border-[#EBDCD0]/60">
-                        <span className="font-serif text-xl font-bold text-[#C88A58]">
+                        <span className="caramel-text font-serif text-xl font-bold">
                           ${product.price.toFixed(2)}
                         </span>
 

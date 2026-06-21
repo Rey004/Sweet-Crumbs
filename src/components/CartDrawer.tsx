@@ -145,7 +145,7 @@ export default function CartDrawer({
                 </p>
                 <button
                   onClick={onClose}
-                  className="bg-[#C88A58] hover:bg-[#A05A2C] text-[#FCFAF7] px-6 py-2.5 rounded-xl text-xs font-bold transition-all shadow"
+                  className="caramel-btn px-6 py-2.5 rounded-xl text-xs font-bold shadow"
                 >
                   Continue Shopping
                 </button>
@@ -191,7 +191,7 @@ export default function CartDrawer({
                           </div>
 
                           <div className="flex items-center justify-between mt-2">
-                            <span className="font-serif text-sm font-bold text-[#C88A58]">
+                            <span className="caramel-text font-serif text-sm font-bold">
                               ${(item.price * item.quantity).toFixed(2)}
                             </span>
 
@@ -269,7 +269,7 @@ export default function CartDrawer({
                         onClick={() => setFulfillment("pickup")}
                         className={`py-2 rounded-xl text-xs font-bold border transition-all ${
                           fulfillment === "pickup"
-                            ? "bg-[#C88A58] text-[#FCFAF7] border-[#C88A58]"
+                            ? "caramel-btn border-transparent"
                             : "bg-white text-[#2A1A10] border-[#EBDCD0] hover:bg-[#F5EBE0]/40"
                         }`}
                       >
@@ -280,7 +280,7 @@ export default function CartDrawer({
                         onClick={() => setFulfillment("delivery")}
                         className={`py-2 rounded-xl text-xs font-bold border transition-all ${
                           fulfillment === "delivery"
-                            ? "bg-[#C88A58] text-[#FCFAF7] border-[#C88A58]"
+                            ? "caramel-btn border-transparent"
                             : "bg-white text-[#2A1A10] border-[#EBDCD0] hover:bg-[#F5EBE0]/40"
                         }`}
                       >
@@ -352,7 +352,7 @@ export default function CartDrawer({
                     )}
                     <div className="border-t border-[#EBDCD0] pt-2 mt-2 flex justify-between text-sm font-bold font-serif text-[#2A1A10]">
                       <span>Total Amount</span>
-                      <span className="text-base text-[#C88A58]">${grandTotal.toFixed(2)}</span>
+                      <span className="caramel-text font-bold text-base">${grandTotal.toFixed(2)}</span>
                     </div>
                   </div>
 
